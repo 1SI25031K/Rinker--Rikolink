@@ -83,19 +83,19 @@ Slackerのパイプライン設計 をベースに、Bashパーサーを統合
 
 ```graph TD
 graph TD
-    User[学生/Slack] -->|@Rinker /cmd| SlackAPI[Slack Event API]
-    SlackAPI -->|Webhook| Gateway[OCI API Gateway]
-    Gateway -->|Trigger| Bolt[Python Bolt App]
+    User["学生/Slack"] -->|@Rinker /cmd| SlackAPI["Slack Event API"]
+    SlackAPI -->|Webhook| Gateway["OCI API Gateway"]
+    Gateway -->|Trigger| Bolt["Python Bolt App"]
     
     subgraph Core_Pipeline
-        Bolt -->|Parse| Parser[Bash-like Parser]
-        Parser -->|Route| Engine{Model Router}
-        Engine -->|Low Cost| Sonic[Rinker Sonic]
-        Engine -->|Deep Analysis| Pro[Rinker Pro]
+        Bolt -->|Parse| Parser["Bash-like Parser"]
+        Parser -->|Route| Engine{"Model Router"}
+        Engine -->|Low Cost| Sonic["Rinker Sonic"]
+        Engine -->|Deep Analysis| Pro["Rinker Pro"]
     end
     
-    Sonic -->|Query| DB[(Oracle DB)]
-    Pro -->|Fetch Logs| GH[GitHub API]
+    Sonic -->|Query| DB[("(Oracle DB)")]
+    Pro -->|Fetch Logs| GH["GitHub API"]
     Pro -->|Save Result| DB
     
     DB -->|Notify| User
