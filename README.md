@@ -83,22 +83,22 @@ Slackerのパイプライン設計 をベースに、Bashパーサーを統合
 
 ```mermaid
 graph TD
-    User["学生 / Slack"] -->| "@Rinker / cmd" | SlackAPI["Slack Event API"]
-    SlackAPI -->| "Webhook" | Gateway["OCI API Gateway"]
-    Gateway -->| "Trigger" | Bolt["Python Bolt App"]
+    U["学生 / Slack"] -->|"@Rinker / cmd"| SAPI["Slack Event API"]
+    SAPI -->|"Webhook"| AGW["OCI API Gateway"]
+    AGW -->|"Trigger"| PBA["Python Bolt App"]
     
     subgraph Core_Pipeline
-        Bolt -->| "Parse" | Parser["Bash-like Parser"]
-        Parser -->| "Route" | Engine{"Model Router"}
-        Engine -->| "Low Cost" | Sonic["Rinker Sonic"]
-        Engine -->| "Deep Analysis" | Pro["Rinker Pro"]
+        PBA -->|"Parse"| BLP["Bash-like Parser"]
+        BLP -->|"Route"| MR{"Model Router"}
+        MR -->|"Low Cost"| RS["Rinker Sonic"]
+        MR -->|"Deep Analysis"| RP["Rinker Pro"]
     end
     
-    Sonic -->| "Query" | DB[("Oracle DB")]
-    Pro -->| "Fetch Logs" | GH["GitHub API"]
-    Pro -->| "Save Result" | DB
+    RS -->|"Query"| ODB[("Oracle DB")]
+    RP -->|"Fetch Logs"| GHA["GitHub API"]
+    RP -->|"Save Result"| ODB
     
-    DB -->| "Notify" | User
+    ODB -->|"Notify"| U
 
 ```
 
