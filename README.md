@@ -81,7 +81,7 @@ $$TechLeader Score = 0.4 \times TES + 0.3 \times PCS + 0.2 \times TCS + 0.1 \tim
 ## 6. アーキテクチャ
 Slackerのパイプライン設計 をベースに、Bashパーサーを統合
 
-```mermaid
+```graph TD
 graph TD
     User[学生/Slack] -->|@Rinker /cmd| SlackAPI[Slack Event API]
     SlackAPI -->|Webhook| Gateway[OCI API Gateway]
