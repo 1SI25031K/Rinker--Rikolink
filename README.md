@@ -193,7 +193,7 @@ python src/app.py
 
 ## 10. OCI
 
-本番環境（OCI）へのデプロイに関する指針です。
+本番環境（OCI）へのデプロイに関する指針
 
 * **Compute**: Ampere A1 Compute インスタンス上で Docker コンテナとして実行。
 * **CI/CD**: GitHub Actions を使用し、OCI Container Registry への Push およびインスタンスへのデプロイを自動化。
@@ -208,6 +208,6 @@ python src/app.py
 ## 12. License
 
 Copyright (c) 2025 RikoLink Project. All rights reserved.
-Built by **Kosei Miyamoto**, **Yuji** and **GEM**.
+Built by **Kosei** and **Yuji**.
 
 
