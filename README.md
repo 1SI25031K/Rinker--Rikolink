@@ -69,7 +69,7 @@ $$TechLeader Score = 0.4 \times TES + 0.3 \times PCS + 0.2 \times TCS + 0.1 \tim
 
 * **Runtime**: Python 3.11+
 * **Framework**: Slack Bolt SDK
-* **AI API**: Gemini 1.5 Flash / Pro (Google AI SDK)
+* **AI API**: Gemini 2.5 Flash / Pro (Google AI SDK)
 * **Cloud**: Oracle Cloud Infrastructure (OCI)
     * **Compute**: OCI Compute (Ampere A1)
     * **Database**: Oracle Autonomous Database (ADW/JSON)
