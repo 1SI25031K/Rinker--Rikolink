@@ -23,31 +23,31 @@ Rinkerは、エンジニアが使い慣れたターミナルの操作感をSlack
 ### Evaluation (解析・評価)
 | コマンド | オプション | 内容 | 駆動AIモデル |
 | :--- | :--- | :--- | :--- |
-| **`sum`** | `-w`, `--week` | 週間進捗要約の生成。企業提出用の下書きを作成。 | **Pro** |
-| | `-d`, `--day` | 本日の日報要約の生成。 | **Sonic** |
-| **`stat`** | `-v`, `--verbose` | TechLeader Scoreの指標別詳細（TES/PCS等）を表示。 | **Flash** |
-| | `-g`, `--graph` | 成長曲線のグラフ表示（Looker Studio連携）。 | **Flash** |
+| **`sum`** | `-w`, `--week` | 週間進捗要約の生成。企業提出用の下書きを作成。 | **Rinker Pro3** |
+| | `-d`, `--day` | 本日の日報要約の生成。 | **Rinker Sonic3** |
+| **`stat`** | `-v`, `--verbose` | TechLeader Scoreの指標別詳細（TES/PCS等）を表示。 | **Rinker Sonic3** |
+| | `-g`, `--graph` | 成長曲線のグラフ表示（Looker Studio連携）。 | **Rinker Sonic3** |
 
 ### Scouting (企業連携)
 | コマンド | オプション | 内容 | 駆動モデル |
 | :--- | :--- | :--- | :--- |
-| **`push`** | `-f`, `--force` | 現在の要約を企業ポータルへ即時送信（Shout）。 | **Pro** |
-| | `--draft` | 企業送信用の下書きを保存・確認。 | **Pro** |
+| **`push`** | `-f`, `--force` | 現在の要約を企業ポータルへ即時送信（Shout）。 | **Rinker Pro3** |
+| | `--draft` | 企業送信用の下書きを保存・確認。 | **Rinker Pro3** |
 
 ### Scheduling (RinkerBell)
 | コマンド | オプション | 内容 | 駆動モデル |
 | :--- | :--- | :--- | :--- |
-| **`bell`** | `-ls`, `--list` | 予約可能な面談スロットを一覧表示。 | **Flash** |
-| | `-n`, `--now` | 「今すぐ面談可能」ステータスへの切り替え。 | **Flash** |
+| **`bell`** | `-ls`, `--list` | 予約可能な面談スロットを一覧表示。 | **Rinker Sonic3** |
+| | `-n`, `--now` | 「今すぐ面談可能」ステータスへの切り替え。 | **Rinker Sonic3** |
 
 ---
 
 ## 3. Gemini API
 リクエストの緊急度と計算負荷に応じて、Geminiモデルを自動ルーティング
 
-* **Rinker Sonic (Gemini 2.5 Flash)**
+* **Rinker Sonic3 (Gemini 3 Flash)**
     * **役割**: 低レイテンシ応答、簡易QA、スコア照会、日程確認。
-* **Rinker Pro (Gemini 2.5 Pro)**
+* **Rinker Pro3 (Gemini 3 Pro)**
     * **役割**: 高精度解析、GitHub/Slackの文脈理解、企業向け要約生成。
 
 ---
