@@ -1,4 +1,4 @@
-# Rinker (riko-link-rinker)
+# Rinker by Rikolink
 
 > **「エンジニアの試行錯誤を、市場価値へ同期する。」**
 
