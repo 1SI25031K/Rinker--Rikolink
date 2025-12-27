@@ -31,7 +31,7 @@ Rinkerは、エンジニアが使い慣れたターミナルの操作感をSlack
 ### Scouting (企業連携)
 | コマンド | オプション | 内容 | 駆動モデル |
 | :--- | :--- | :--- | :--- |
-| **`push`** | `-f`, `--force` | 現在の要約を企業ポータルへ即時送信（Shout）。 | **RRinker 3 Supernova** |
+| **`push`** | `-f`, `--force` | 現在の要約を企業ポータルへ即時送信（Shout）。 | **Rinker 3 Supernova** |
 | | `--draft` | 企業送信用の下書きを保存・確認。 | **Rinker 3 Supernova** |
 
 ### Scheduling (RinkerBell)
