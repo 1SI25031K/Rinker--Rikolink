@@ -25,14 +25,14 @@ Rinkerは、エンジニアが使い慣れたターミナルの操作感をSlack
 | :--- | :--- | :--- | :--- |
 | **`sum`** | `-w`, `--week` | 週間進捗要約の生成。企業提出用の下書きを作成。 | **Rinker 3 Nova** |
 | | `-d`, `--day` | 本日の日報要約の生成。 | **Rinker 3 Nova** |
-| **`stat`** | `-v`, `--verbose` | TechLeader Scoreの指標別詳細（TES/PCS等）を表示。 | **Rinker3 Supernova 3** |
+| **`stat`** | `-v`, `--verbose` | TechLeader Scoreの指標別詳細（TES/PCS等）を表示。 | **Rinker 3 Supernova** |
 | | `-g`, `--graph` | 成長曲線のグラフ表示（Looker Studio連携）。 | **Rinker 3 Nova** |
 
 ### Scouting (企業連携)
 | コマンド | オプション | 内容 | 駆動モデル |
 | :--- | :--- | :--- | :--- |
-| **`push`** | `-f`, `--force` | 現在の要約を企業ポータルへ即時送信（Shout）。 | **Rinker3 Supernova 3** |
-| | `--draft` | 企業送信用の下書きを保存・確認。 | **Rinker3 Supernova 3** |
+| **`push`** | `-f`, `--force` | 現在の要約を企業ポータルへ即時送信（Shout）。 | **RRinker 3 Supernova** |
+| | `--draft` | 企業送信用の下書きを保存・確認。 | **Rinker 3 Supernova** |
 
 ### Scheduling (RinkerBell)
 | コマンド | オプション | 内容 | 駆動モデル |
@@ -45,9 +45,9 @@ Rinkerは、エンジニアが使い慣れたターミナルの操作感をSlack
 ## 3. Gemini API
 リクエストの緊急度と計算負荷に応じて、Geminiモデルを自動ルーティング
 
-* **Rinker Nova 3 (Gemini 3 Flash)**
+* **Rinker 3 Nova (Gemini 3 Flash)**
     * **役割**: 低レイテンシ応答、簡易QA、スコア照会、日程確認。
-* **Rinker3 Supernova 3 (Gemini 3 Pro)**
+* **Rinker 3 Supernova (Gemini 3 Pro)**
     * **役割**: 高精度解析、GitHub/Slackの文脈理解、企業向け要約生成。
 
 ---
