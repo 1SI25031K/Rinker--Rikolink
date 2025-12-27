@@ -23,10 +23,10 @@ Rinkerは、エンジニアが使い慣れたターミナルの操作感をSlack
 ### Evaluation (解析・評価)
 | コマンド | オプション | 内容 | 駆動AIモデル |
 | :--- | :--- | :--- | :--- |
-| **`sum`** | `-w`, `--week` | 週間進捗要約の生成。企業提出用の下書きを作成。 | **Rinker Nova 3** |
-| | `-d`, `--day` | 本日の日報要約の生成。 | **Rinker Nova3** |
+| **`sum`** | `-w`, `--week` | 週間進捗要約の生成。企業提出用の下書きを作成。 | **Rinker 3 Nova** |
+| | `-d`, `--day` | 本日の日報要約の生成。 | **Rinker 3 Nova** |
 | **`stat`** | `-v`, `--verbose` | TechLeader Scoreの指標別詳細（TES/PCS等）を表示。 | **Rinker3 Supernova 3** |
-| | `-g`, `--graph` | 成長曲線のグラフ表示（Looker Studio連携）。 | **Rinker Nova 3** |
+| | `-g`, `--graph` | 成長曲線のグラフ表示（Looker Studio連携）。 | **Rinker 3 Nova** |
 
 ### Scouting (企業連携)
 | コマンド | オプション | 内容 | 駆動モデル |
@@ -37,8 +37,8 @@ Rinkerは、エンジニアが使い慣れたターミナルの操作感をSlack
 ### Scheduling (RinkerBell)
 | コマンド | オプション | 内容 | 駆動モデル |
 | :--- | :--- | :--- | :--- |
-| **`bell`** | `-ls`, `--list` | 予約可能な面談スロットを一覧表示。 | **Rinker Nova 3** |
-| | `-n`, `--now` | 「今すぐ面談可能」ステータスへの切り替え。 | **Rinker Nova 3** |
+| **`bell`** | `-ls`, `--list` | 予約可能な面談スロットを一覧表示。 | **Rinker 3 Nova** |
+| | `-n`, `--now` | 「今すぐ面談可能」ステータスへの切り替え。 | **Rinker 3 Nova** |
 
 ---
 
